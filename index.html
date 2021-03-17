@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>The Netflick</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Fun Project Title</h1>
+        <div class="selector row">
+            <div class="genre col-sm" id="genre">
+                <input type="checkbox" id="comedy" value="comedy">
+                <label for="comedy">Comedy</label>
+                <br>
+                <input type="checkbox" id="drama" value="drama">
+                <label for="drama">Drama</label>
+                <br>
+                <input type="checkbox" id="horror" value="horror">
+                <label for="horror">Horror</label>
+                <br>
+                <input type="checkbox" id="kids" value="kids">
+                <label for="kids">Kids</label>
+                <br>
+            </div>
+            <div class="era col-sm" id="era">
+                <label for="era">Choose an era:</label>
+                <select id="decades" name="decades">
+                    <option value="50s">50s</option>
+                    <option value="60s">60s</option>
+                    <option value="70s">70s</option>
+                    <option value="80s">80s</option>
+                    <option value="90s">90s</option>
+                    <option value="00s">00s</option>
+                    <option value="10s">10s</option>
+                </select>
+            </div>
+            <div class="mood col-sm" id="mood">
+                <div class="current mood">
+                    <!--emoji selector, dropdown for now-->
+                    <label for="mood">How's your mood?</label>
+                    <select id="emojis" name="emojis">
+                        <option value="happy">:D</option>
+                        <option value="sad">:(</option>
+                        <option value="mindblown">:o</option>
+                        <option value="flirty">:*</option>
+                </div>
+                <div class="current-weather">
+                    <!--weather API-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
