@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>The Netflick</title>
+    <title>Weather Flix</title>
 </head>
 <body>
     <div class="container">
-        <h1>Fun Project Title</h1>
+        <h1>What movie should I watch?</h1>
         <div class="selector row">
             <div class="genre col-sm" id="genre">
-                <input type="checkbox" id="comedy" value="comedy">
-                <label for="comedy">Comedy</label>
-                <br>
-                <input type="checkbox" id="drama" value="drama">
-                <label for="drama">Drama</label>
-                <br>
-                <input type="checkbox" id="horror" value="horror">
-                <label for="horror">Horror</label>
-                <br>
-                <input type="checkbox" id="kids" value="kids">
-                <label for="kids">Kids</label>
-                <br>
+                <label for="genre">Genre</label>
+                <select id="genre" name="genre">
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Animated">Animated</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Documentary">Documentary</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Family">Family</option>
+                    <option value="History">History</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Musicals">Musicals</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="War">War</option>
+                    <option value="Western">Western</option>
+                </select>
+
             </div>
             <div class="era col-sm" id="era">
                 <label for="era">Choose an era:</label>
@@ -34,7 +43,7 @@
                     <option value="80s">80s</option>
                     <option value="90s">90s</option>
                     <option value="00s">00s</option>
-                    <option value="10s">10s</option>
+                    <option value="10s">10s-today</option>
                 </select>
             </div>
             <div class="mood col-sm" id="mood">
