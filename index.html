@@ -11,6 +11,7 @@
     <div class="container">
         <h1>What movie should I watch?</h1>
         <div class="selector row">
+            <!--
             <div class="genre col-sm" id="genre">
                 <label for="genre">Genre</label>
                 <select id="genre" name="genre">
@@ -32,8 +33,9 @@
                     <option value="War">War</option>
                     <option value="Western">Western</option>
                 </select>
-
+                
             </div>
+            -->
             <!--
             <div class="era col-sm" id="era">
                 <label for="era">Choose an era:</label>
@@ -48,7 +50,7 @@
                 </select>
             </div>
             -->
-            <div class="mood col-sm" id="mood">
+            <div class="mood col-md" id="mood">
                 <div class="current mood">
                     <!--emoji selector, dropdown for now-->
                     <label for="mood">How's your mood?</label>
@@ -57,11 +59,17 @@
                         <option value="sad">:(</option>
                         <option value="mindblown">:o</option>
                         <option value="flirty">:*</option>
+                    </select>
                 </div>
                 <div class="current-weather">
+                    <h5>Current Weather</h5>
                     <!--weather API-->
                 </div>
+                <button type="submit-btn">Submit</button>
             </div>
+        </div>
+        <div class="suggested-movies">
+
         </div>
     </div>
 </body>
