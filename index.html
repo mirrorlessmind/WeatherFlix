@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Weather Flix</title>
 </head>
 <body>
@@ -61,16 +62,22 @@
                         <option value="flirty">:*</option>
                     </select>
                 </div>
-                <div class="current-weather">
+                <!--weather API-->
+                <div class="current-weather" id="current-weather">
                     <h5>Current Weather</h5>
-                    <!--weather API-->
+                    <form id="city-search">
+                        <input type="text" name="city" placeholder="Where are you?" />
+                        <button type="submit" class="btn"> Search </button>
+                    </form>
                 </div>
                 <button type="submit-btn">Submit</button>
             </div>
         </div>
         <div class="suggested-movies">
-
+            <!-- OMDB API -->
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script2.js"></script>
 </body>
 </html>
