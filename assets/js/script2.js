@@ -1,5 +1,3 @@
-console.log("Hello World!");
-
 $(document).ready(function(){
     var currentWeather = $("#current-weather");
     //from hw
