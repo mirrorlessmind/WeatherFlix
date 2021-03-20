@@ -1,10 +1,14 @@
+h1h1 {
+    color:rgb(49, 107, 107);
+}
+
 body {
     background-color: #9260d3;
     margin: 0 auto;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #9c9a9a;
 }
-/* Container wrapper div */
+/* Container div */
 #container {
     background-color: #9260d3;
     margin-left: 15%;
@@ -31,15 +35,7 @@ h1 {
     font-weight: bold;
 
 }
-/* Styles for h2 */
-h2 {
-    margin-left: 20px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-weight: bold;
-}
+
 /* Styles for textarea */
 textarea {
     padding: 10%;
@@ -58,7 +54,7 @@ textarea {
     margin-top: 20px;
 }
 /* Styles for submit button */
-#submit {
+#submit-btn {
     background-color: #dbc8c8;
     font-size: 20px;
     padding: 14px 40px;
@@ -73,7 +69,7 @@ textarea {
     body {
         max-width: 980px;
     }   
-    #wrapper {
+    #container {
         width: 100%;
         }
 }
@@ -83,7 +79,7 @@ textarea {
     body {
         max-width: 786px;
     } 
-    #wrapper {
+    #container {
         width: 100%;
         }
 /* Styles for buttons */
