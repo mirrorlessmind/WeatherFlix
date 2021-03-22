@@ -11,6 +11,71 @@
 </head>
 <body>
     <div>
+<div class="container">
+        <h1>What movie should I watch?</h1>
+        <div class="selector row">
+            <!--
+            <div class="genre col-sm" id="genre">
+                <label for="genre">Genre</label>
+                <select id="genre" name="genre">
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Animated">Animated</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Documentary">Documentary</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Family">Family</option>
+                    <option value="History">History</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Musicals">Musicals</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="War">War</option>
+                    <option value="Western">Western</option>
+                </select>
+                
+            </div>
+            -->
+            <!--
+            <div class="era col-sm" id="era">
+                <label for="era">Choose an era:</label>
+                <select id="decades" name="decades">
+                    <option value="50s">50s</option>
+                    <option value="60s">60s</option>
+                    <option value="70s">70s</option>
+                    <option value="80s">80s</option>
+                    <option value="90s">90s</option>
+                    <option value="00s">00s</option>
+                    <option value="10s">10s-today</option>
+                </select>
+            </div>
+            -->
+            <div class="mood col-md" id="mood">
+                <div class="current mood">
+                    <!--emoji selector, dropdown for now-->
+                    <label for="mood">How's your mood?</label>
+                    <select id="emojis" name="emojis">
+                        <option value="happy">:D</option>
+                        <option value="sad">:(</option>
+                        <option value="mindblown">:o</option>
+                        <option value="flirty">:*</option>
+                    </select>
+                </div>
+                <div id="current-weather">
+                    <h5>Current Weather</h5>
+                    <!--weather API-->
+                    <form id="city-search">
+                        <input type="text" name="city" placeholder="Where are you?" />
+                        <button type="submit" class="btn"> Search </button>
+                    </form>
+                </div>
+                <button type="submit-btn">Submit</button>
+            </div>
+        </div>
+    </div>
 		<div class="search-criteria">
 			<input id="title_text" type="text" name="title" value="">
 			<button id="search_btn">Search</button>
@@ -26,5 +91,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script  src = "./assets/omdb.js"> </script> 
+	<script src="assets/js/script2.js"></script>
 </body>
 </html>
