@@ -1,34 +1,40 @@
 
-$(document).ready(function(){
-    var containerMovieSearch = $ ('#containerMovieSearch')
-    var searchForm = $('#searchForm');
-    var container = $('#movieContainer');
-    var apiKey = '4b93bd1f';
-    var baseUrl = 'http://www.omdbapi.com/?';
-    searchForm.submit(function(event){
-        event.preventDefault();
-        console.log(event);
-        // $(this) = This form that just submitted
-        var formValues = $(this).seralizeArray();
-        var movie = formValues[0].values;
-        // How to create element with jQUERY Selector
-        //var searchTermDiv = $('<div class = "past-search-term">');
-        //searchTermDiv.text(movie);
-        //containerMovieSearch.append(searchTermDiv);
-        //console.log(formValues, movie);
-        // Real Value Gotten from form
-        //searchForMovie(movie);
-    });
+document.getElementById('search_btn').addEventListener('click', function(){
+	var title = document.getElementById('title_text').value;
+	var request = new Request('https://www.omdbapi.com/?apikey=bb99287f&s='+title);
+	
+    
+    fetch(request).then(function(result){
+		return result.json();
+	})
 
-    function searchForMovie(movie) {
-        var fullUrl = baseUrl + "q=" + movie + "&appid=" + apiKey;
-        console.log (movie);
-        fetch (fullUrl).then(function (response){
-            return response.json ();
-        })
-        .then (function (data){
-            console.log (data);
-        });
-    }
-})
+    .then(function(data){
+		var searchEl = document.getElementById('search_result');
+		var len = data.Search.length;
 
+
+		for(var i = 0; i < len; i++){
+			var movieContainer = document.createElement('div');
+			movieContainer.className = 'search-result--item';
+
+			var titleEl = document.createElement('div');
+			titleEl.innerText = data.Search[i].Title;
+
+			var yearEl = document.createElement('div');
+			yearEl.innerText = data.Search[i].Year;
+
+			var typeEl = document.createElement('div');
+			typeEl.innerText = data.Search[i].Type;
+
+			var posterEl = document.createElement('img');
+			posterEl.src = data.Search[i].Poster;
+
+
+			movieContainer.appendChild(posterEl);
+			movieContainer.appendChild(titleEl);
+			movieContainer.appendChild(yearEl);
+			movieContainer.appendChild(typeEl);
+			searchEl.appendChild(movieContainer);
+		}
+	});
+});
