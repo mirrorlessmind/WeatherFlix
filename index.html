@@ -14,31 +14,12 @@
 <div class="container">
         <h1>What movie should I watch?</h1>
         <div class="selector row">
-            <!--
-            <div class="genre col-sm" id="genre">
+            <div class="genre col-12" id="genre-container">
                 <label for="genre">Genre</label>
-                <select id="genre" name="genre">
-                    <option value="Action">Action</option>
-                    <option value="Adventure">Adventure</option>
-                    <option value="Animated">Animated</option>
-                    <option value="Comedy">Comedy</option>
-                    <option value="Crime">Crime</option>
-                    <option value="Documentary">Documentary</option>
-                    <option value="Drama">Drama</option>
-                    <option value="Family">Family</option>
-                    <option value="History">History</option>
-                    <option value="Horror">Horror</option>
-                    <option value="Musicals">Musicals</option>
-                    <option value="Mystery">Mystery</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Sci-Fi">Sci-Fi</option>
-                    <option value="Thriller">Thriller</option>
-                    <option value="War">War</option>
-                    <option value="Western">Western</option>
-                </select>
+                <select id="genre" name="genre"></select>
                 
             </div>
-            -->
+            
             <!--
             <div class="era col-sm" id="era">
                 <label for="era">Choose an era:</label>
@@ -53,7 +34,7 @@
                 </select>
             </div>
             -->
-            <div class="mood col-md" id="mood">
+            <div class="mood col-12" id="mood">
                 <div class="current mood">
                     <!--emoji selector, dropdown for now-->
                     <label for="mood">How's your mood?</label>
@@ -64,7 +45,7 @@
                         <option value="flirty">:*</option>
                     </select>
                 </div>
-                <div id="current-weather">
+                <div class = "current-weather col-12" id="current-weather">
                     <h5>Current Weather</h5>
                     <!--weather API-->
                     <form id="city-search">
@@ -72,18 +53,14 @@
                         <button type="submit" class="btn"> Search </button>
                     </form>
                 </div>
-                <button type="submit-btn">Submit</button>
-            </div>
+                <div class="search-criteria">
+                    <input id="title_text" type="text" name="title" value="">
+                    <button id="search_btn" type="submit-btn">Submit</button>
+                </div>
+                <div id="search_result" class="search-result-container">
+                    
         </div>
-    </div>
-		<div class="search-criteria">
-			<input id="title_text" type="text" name="title" value="">
-			<button id="search_btn">Search</button>
-		</div>
-		<div id="search_result" class="search-result-container">
-			
-		</div>
-	</div>
+   
    
 </div> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
