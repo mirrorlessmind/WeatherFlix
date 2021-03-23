@@ -1,3 +1,88 @@
 Six Weather values: sunny, rain, cloudy, snow, fog, tornadoes
 Six Emotions happy, sad, mindblown, flirty, scared angry
-8 Movies drama, comedy, history, sports, family, horror, musicals
+8 Movies drama, comedy, history, sports, family, horror, musical
+
+Andrew suggestions
+if (weather[0].icon === 'rainy') {
+var genreSelect = $('#genre');
+for (var i = 0; i < genre1.length; i++) {
+   var option = $('<option>')
+   // setting the textContent and Value with genre1[i]
+    option.text(genre1[i]), 
+    option.val(genre1[i])
+    genreSelect.append(option)
+} 
+} else {
+var genreSelect = $('#genre');
+for (var i = 0; i < genre2.length; i++) {
+   var option = $('<option>')
+   // setting the textContent and Value with genre2[i]
+    option.text(genre2[i]), 
+    option.val(genre2[i])
+    genreSelect.append(option)
+} 
+}
+}
+(edited)
+8:18
+https://api.jquery.com/change/
+8:18
+$( "" ).change(function() {
+  alert( "Handler for .change() called." );
+});
+
+
+
+Send a message to Andrew Kemp - TA, Henry Aldous, Katie Devinney
+
+
+Thread
+﻿03-questions-for-instructional-team
+
+
+https://unicode.org/emoji/charts/full-emoji-list.html
+Original
+Genre List
+All
+Action
+Adventure
+Animated
+Comedy
+Crime
+Documentary
+Drama
+Family
+History
+Horror
+Musicals
+Mystery
+Romance
+Sci-Fi
+Thriller
+War
+Western
+Era List
+Any
+2010-Present
+2000s
+90s
+80s
+70s
+60s
+50s
+GoldenAge
+Weather List
+Type = Emoji = Genre List Generator
+https://unicode.org/emoji/charts/full-emoji-list.html
+Sunny =U+2600 :sunny:= All
+Partly Sunny =U+1F324 :mostly_sunny: = Drama, Crime, Mystery, Horror, & Comedy + Era
+Sun and Rain = U+1F326 :partly_sunny_rain: =  Drama, Crime, Mystery, Horror, & Comedy + Era
+Fog = U+1F32B  :fog: =  Romance, Drama, Crime, Mystery, Horror, & Comedy +Era
+Partly Cloudy = U+1F325 :barely_sunny:= Drama, Crime, Mystery, Horror, & Comedy + Era
+Raining =U+2614 :umbrella_with_rain_drops: = Drama, Horror & Family +Era
+Thunderstorm =U+1F329 :lightning: = Drama, Horror & Family + Era Thunderstorms
+Snowing = U+2744 :snowflake:= Drama, Romance, Mystery, Thriller & Family + Era ThCloudy
+Windy = U+1F32C :wind_blowing_face: = Drama, Horror & Sci-Fi + Era
+Meteor Shower = U+2604 :comet: = Drama, Sci-Fi, Horror & Family + Era
+Tornadoes= U+1F32A :tornado: = Drama, Sci-Fi, Comedy & Family +Era
+Clear = U+1F308 :rainbow:= Musicals, Drama, Mystery, Comedy & Family + Era
