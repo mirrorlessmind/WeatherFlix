@@ -52,6 +52,8 @@
         </a>
       </div> -->
         <div class="selector row">
+
+            
             <div class="genre col-sm" id="genre">
                 <label for="genre">Genre</label>
                 <select id="genre" name="genre">
@@ -89,7 +91,7 @@
                 </select>
             </div>
             -->
-            <div class="mood col-md" id="mood">
+            <div class="mood col-12" id="mood">
                 <div class="current mood">
                     <!--emoji selector, dropdown for now-->
                     <label for="mood">How's your mood?</label>
@@ -102,7 +104,7 @@
                         <option value="angry"> &#128545; </option>
                     </select>
                 </div>
-                <div id="current-weather">
+                <div class = "current-weather col-12" id="current-weather">
                     <h5>Current Weather</h5>
                     <!--weather API-->
                     <form id="city-search">
@@ -110,18 +112,14 @@
                         <button type="submit" class="btn"> Search </button>
                     </form>
                 </div>
-                <button type="submit-btn">Submit</button>
-            </div>
+                <div class="search-criteria">
+                    <input id="title_text" type="text" name="title" value="">
+                    <button id="search_btn" type="submit-btn">Submit</button>
+                </div>
+                <div id="search_result" class="search-result-container">
+                    
         </div>
-    </div>
-		<div class="search-criteria">
-			<input id="title_text" type="text" name="title" value="">
-			<button id="search_btn">Search</button>
-		</div>
-		<div id="search_result" class="search-result-container">
-			
-		</div>
-	</div>
+   
    
 </div> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
