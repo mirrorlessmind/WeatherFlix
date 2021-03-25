@@ -7,6 +7,11 @@ body {
     margin: 0 auto;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #9c9a9a;
+    height: 100vh;
+}
+
+.column {
+    padding: 5%;
 }
 /* Container div */
 #container {
@@ -16,6 +21,7 @@ body {
     padding-top: 30px;
     margin-top: 30px;
     width: 980px;
+    height: 100vh;
 }
 /* Styles content div */
 #content {
