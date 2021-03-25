@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,81 +11,72 @@
     <link rel ="stylesheet" href="./assets/css/style.css">
     <title>Weather Flix</title>
 </head>
+
 <body>
-  <div class="container">
-    <section class="hero is-dark">
-      <div class="hero-body">
-          <p class="title">
-            WeatherFlix
-          </p>
-          <p class="subtitle">
-            Watch movies based on your mood + weather &#127785;
-          </p>
-      </div>
-    </section>
-        <div class="selector columns">
 
-            <div class="genre column" id="genre-container">
-                <label for="genre">Genre</label>
-                <br>
-                <select id="genre" name="genre">
-                    <option value="Action">Action</option>
-                    <!-- <option value="Adventure">Adventure</option> -->
-                    <!-- <option value="Animated">Animated</option> --> 
-                    <option value="Comedy">Comedy</option>
-                    <!-- <option value="Crime">Crime</option> -->
-                    <!-- <option value="Documentary">Documentary</option> -->
-                    <option value="Drama">Drama</option>
-                    <option value="Family">Family</option>
-                    <!-- <option value="History">History</option> -->
-                    <option value="Horror">Horror</option>
-                    <!-- <option value="Musicals">Musicals</option> -->
-                    <option value="Mystery">Mystery</option>
-                    <option value="Romance">Romance</option>
-                    <!-- <option value="Sci-Fi">Sci-Fi</option> -->
-                    <option value="Thriller">Thriller</option>
-                    <!-- <option value="War">War</option> -->
-                    <!-- <option value="Western">Western</option> -->
-                </select>
-                
-            </div>
-
-            <div class="current-mood column">
-                <!--emoji selector, dropdown for now-->
-                <label for="mood">How's your mood?</label>
-                <br>
-                <select id="emojis" name="emojis">
-                    <option value="happy"> &#128512; </option>
-                    <option value="sad"> &#128546; </option>
-                    <option value="mindblown"> &#129327;</option>
-                    <option value="flirty"> &#128536; </option>
-                    <option value="scared"> &#128552; </option>
-                    <option value="angry"> &#128545; </option>
-                </select>
-            </div>
-            <div class = "current-weather column" id="current-weather">
-                <h5>Current Weather</h5>
-                <!--weather API-->
-                <form id="city-search">
-                    <input type="text" name="city" placeholder="Where are you?" />
-                    <button type="submit" class="btn"> Search </button>
-                </form>
-            </div>
-            <div class="search-criteria column">
-              <h5>Keyword Search</h5>
-              <input id="title_text" type="text" name="title" value="Keyword">
-              <br>
-              <button id="search_btn" type="submit-btn">Submit</button>
-            </div>
-          <div id="search_result" class="search-result-container">
-
+  <div>
+    <div class="container">
+      <section class="hero is-dark">
+        <div class="hero-body">
+          <div class="">
+            <p class="title">
+              WeatherFlix
+            </p>
+            <p class="subtitle">
+              Watch movies based on your mood + weather &#127785;
+            </p>
           </div>
-  </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src = "./assets/omdb.js"> </script> 
-	<script src="assets/js/script2.js"></script>
+        </div>
+      </section>
+     
+
+      <div class="selector columns">
+        <div class="current-weather column" id="current-weather">
+          <h5>Current Weather</h5>
+          <!--weather API-->
+          <form id="city-search">
+            <input type="text" name="city" placeholder="Where are you?" />
+            <button type="submit" class="btn"> Search </button>
+          </form>
+        </div>
+
+        <div class="mood column" id="mood">
+          
+          <div class="current mood column">
+            <!--emoji selector, dropdown for now-->
+            <label for="mood">How's your mood?</label>
+            <select id="emojis" name="emojis">
+              <option value="happy"> &#128512; </option>
+              <option value="sad"> &#128546; </option>
+              <option value="mindblown"> &#129327;</option>
+              <option value="flirty"> &#128536; </option>
+              <option value="scared"> &#128552; </option>
+              <option value="angry"> &#128545; </option>
+            </select>
+          </div>
+          
+        <div class="genre col-sm" id="genre-container">
+          <label for="genre">Genre</label>
+          <select id="genre" name="genre">
+          </select>
+          </div>
+        
+          <div id="search_result" class="search-result-container"> </div>
+
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+        <script src="./assets/omdb.js"> </script>
+        <script src="./assets/js/script2.js"></script>
+
 </body>
+
 </html>
