@@ -97,9 +97,9 @@ document.getElementById("genre").addEventListener("change", function (event) {
   
 		.then(function (data) {
 		  var searchEl = document.getElementById("search_result");
+		  searchEl.innerHTML = "" ;
 		  console.log(data);
 		  var len = data.results.length;
-  
 		  for (var i = 0; i < len; i++) {
 			var currentMovie = data.results[i];
 		  // adult: false
