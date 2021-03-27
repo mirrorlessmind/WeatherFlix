@@ -1,5 +1,6 @@
 $(document).ready(function () {
   var currentWeather = $("#current-weather");
+  var weatherResult = $("#weather-result");
   //from hw
   var genre1 = ['Action', 'Adeventure', 'Crime', 'Documentary', 'Horror', 'Mystery', 'Thriller', 'War'];
   var genre2 = ['Animation', 'Comedy', 'Family', 'History', 'Music', 'Romance', 'Science Fiction', 'Western'];
@@ -14,6 +15,7 @@ $(document).ready(function () {
   var citySearch = $("#city-search");
   citySearch.submit(function (event) {
       event.preventDefault();
+      weatherResult.html("");
       // this = the form that just submitted!
       var formValues = $(this).serializeArray();
       var city = formValues[0].value;
@@ -94,7 +96,7 @@ $(document).ready(function () {
               console.log(weather);
               var weatherDiv = $('<img class="icon-name">');
               weatherDiv.attr("src", iconUrl);
-              currentWeather.append(weatherDiv);
+              weatherResult.append(weatherDiv);
               console.log(iconUrl);
           });
   }
