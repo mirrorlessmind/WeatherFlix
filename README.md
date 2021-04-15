@@ -36,3 +36,6 @@ THEN I am presented with several movie posters.
 [Link to deployed application](https://mirrorlessmind.github.io/WeatherFlix/)
 
 WeatherFlix is an app that runs in the browser. Weather data is based on user input. The user will also select a mood.
+
+## Contributors
+Henry Aldous, Katie Devinney, Cigi Tipton
